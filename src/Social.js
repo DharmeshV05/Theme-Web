@@ -1,6 +1,4 @@
 import React from 'react';
-
-
 function Social() {
   return (
     <div id="apps-container">
