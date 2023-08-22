@@ -19,7 +19,7 @@ body[data-theme='dark'] {
 
 
 body {
-   background-color: rgb(var(--body-color)); 
+  background-color: rgb(var(--body-color)); 
   /* background-image: url('https://images.pexels.com/photos/3178786/pexels-photo-3178786.jpeg?cs=srgb&dl=pexels-andrew-neel-3178786.jpg&fm=jpg'); */
   margin: 0px;
 }
@@ -150,8 +150,9 @@ button, a, input {
 
 #search-input-container > input,
 #search-container > button {
-  background-color: rgb(255 255 255 / 10%);
-  color: rgb(255 255 255 / 80%);
+  background-color: rgb(255 255 255 / 10%);  /* <-- Issue here, use rgba(255, 255, 255, 0.1) instead */
+  color: rgb(255 255 255 / 80%);  /* <-- Issue here, use rgba(255, 255, 255, 0.8) instead */
+  /* ... */
   font-size: 1rem;
   border: none;
 }
@@ -251,6 +252,7 @@ i.fa-brands.fa-stack-overflow {
 }
 
 #apps-container > a:is(:hover, :focus) {
+  
   background-color: rgb(255 255 255 / 16%);
 }
 
