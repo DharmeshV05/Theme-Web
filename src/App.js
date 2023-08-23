@@ -5,6 +5,7 @@ import Header from "./Header";
 import SearchBar from "./SearchBar";
 import Social from "./Social";
 
+
 function App() {
   const searchInputRef = useRef(null);
   const [theme, setTheme] = useState("light");
